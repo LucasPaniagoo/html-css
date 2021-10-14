@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        /* 
+        - 'font-weight:' mexe no peso da fonte, se ela vai ser mais fat ou magrinha;
+        - 'font-size:' mexe com o tamanho da letra;
+        - 'font-style:' mexe no estilo da fonte, podendo ser: italico, negrito, etc;
+        - 'text-decoration:' mexe com a decoração da letra, podendo deixá-la sublinhada, etc;
+        - 
+        */
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1em;
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: underline;
+        /*
+        shorthand -  te ajuda a simplificar esses dados acima em uma só linha, porém a ordem deve ser seguida:
+        
+        font-style > font-weight > font-size > font-family
+
+        exemplo no cod baixo
+        */ 
+        }
+        h1{
+            font: bold normal 3em Times ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia impedit doloribus corporis iure, sapiente culpa est provident consequuntur deserunt ipsa fugit. Deserunt saepe totam eveniet impedit voluptate recusandae quod quaerat. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem unde, quo magni iste perspiciatis suscipit, tempora nulla hic quisquam fugit assumenda porro cumque distinctio nisi fugiat! Error nobis ex maiores?</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad repudiandae accusamus repellat quas ratione? Odit nobis, adipisci voluptas, molestiae nam saepe sint officia nulla quo, aut doloribus fuga neque sed? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ab fugiat fuga eligendi magnam et beatae est saepe suscipit reiciendis! Inventore ex maxime architecto illum quod, ipsam culpa illo ratione.</p>
+</body>
+</html>

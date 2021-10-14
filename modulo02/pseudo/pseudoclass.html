@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Class</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        h1{
+            text-align: center;
+        }
+        .box{
+            display: inline-block;
+            background-color: lightgray;
+            border: 1px solid black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+        .box:hover{
+            background-color: black;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        p{
+            color: white;
+        }
+        .box > p{
+            display: none;
+        }
+        .box:hover > p{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando pseudo-class</h1>
+    <div class="container">
+    <div class="box">01
+        <p>
+        Oi eu sou Pablo
+        Meu nome é Tyrone
+        Eu sou a Uniqua
+        Eu sou a Tasha
+        E meu nome é Austin
+        </p>
+    </div>
+    <div class="box">02
+        <p>
+        E nós somos
+        Seus amiguinhos os Backyardigans
+        Juntos nós somos
+        Os Backyardigans
+        </p>
+    </div>
+    
+    <div class="box">03
+        <p>
+        Onde é nosso lugar
+        Nós gostamos de cantar
+        E gostamos de dançar
+        </p>
+    </div>
+    <div class="box">04
+        <p>
+        Temos o mundo inteiro no nosso quintal
+        Sempre encontrando coisas novas pra brincar
+        Todos os dias nós vamos contar com os amigos
+        Os Backyardigans
+        </p>
+    </div>
+    </div>
+</body>
+</html>
