@@ -26,6 +26,8 @@
     box-sizing: border-box;
 }
 body{
+    align-items: center;
+    justify-content: center;
     font-family: var(--font-padrao);
     background-color:var(--corback);
 }
@@ -38,6 +40,7 @@ header{
 header>h1{
     font-family: var(--font-destaque);
     font-weight: bold;
+    font-size: 3.5em;
     color: var(--cor3);
     text-align: center;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.116);
@@ -45,6 +48,7 @@ header>h1{
 header>p{
     font-family: var(--font-padrao);
     font-weight: bold;
+    font-size: 1.5em;
     color: var(--cor2);
     text-align: center;
     margin: auto;
@@ -56,12 +60,14 @@ nav{
 
 }
 nav>a{
+
     text-decoration: none;
     padding: 7px;
     margin-right: 10px;
     color: var(--cor4);
     font-family: var(--font-padrao);
     font-weight: bold;
+    font-size: 1.3em;
     
 }
 nav>a:hover{
@@ -73,16 +79,6 @@ h2{
     color: var(--cor4);
     text-align: center;
 }
-section.carrousel{
-    background-color: white;
-    min-width: 300px;
-    max-width: 1500px;
-    padding: 20px;
-    margin: auto;
-    margin-bottom: 30px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.425);
-    border-radius: 10px 10px;
-}
 section.divi{
     background-color: white;
     min-width: 300px;
@@ -92,6 +88,17 @@ section.divi{
     margin-bottom: 30px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.425);
     border-radius: 10px 10px;
+}
+section.carro{
+    background-color: white;
+    min-width: 300px;
+    max-width: 1500px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.425);
+    border-radius: 10px 10px   
 }
 section.footer{
     background-color: white;
@@ -122,13 +129,42 @@ figure img{
     max-width: 100%;
 }
 figure a{
+    background-color: rgba(35, 155, 35, 0.555);
     color: white;
+    margin: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 7px;
+    padding-bottom: 7px;
     text-decoration: none;
+    border-radius: 3px 3px;
 
 }
-p.box{
-    background-color: rgba(35, 155, 35, 0.555);
-    border-radius: 2px 2px;
-    padding: 10px;
-    margin-top: 10px;
+figure a:hover{
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    font-size: 1.06em;
+}
+p.valor{
+    margin-bottom: 17px;
+}
+.carrousel{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    overflow: hidden;
+    height: 600px;
+    width: 1450px;
+}
+.container{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+div > img{
+    object-fit: cover;
+    height: 800px;
+    width: 1450px;
 }
