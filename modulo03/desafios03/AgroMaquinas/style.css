@@ -1,5 +1,17 @@
 @charset "UTF-8";
 
+@media screen and (max-width: 768px){
+    .carrousel{
+        max-width: 768px;
+    }
+    .carro{
+        max-width: 768px;
+    }
+    div > img{
+        max-width: 768px;
+        width: 100%;
+    }
+}
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 
 /* Segunda paleta (mais escura)*/
@@ -156,7 +168,7 @@ p.valor{
     display: flex;
     overflow: hidden;
     height: 600px;
-    width: 1450px;
+    max-width: 1450px;
 }
 .container{
     display: flex;

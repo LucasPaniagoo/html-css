@@ -9,8 +9,8 @@ function carrousel(){
     if (idx > img.length - 1) {
         idx = 0;
     }
-
     imgs.style.transform = `translateX(${-idx * 1450}px)`
+    
 }
 
 setInterval(carrousel, 3000)
